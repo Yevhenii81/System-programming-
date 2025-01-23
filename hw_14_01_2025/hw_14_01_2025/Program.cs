@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Home_Work_16._01._25
+namespace hw_14_01_2025
 {
     internal class Program
     {
