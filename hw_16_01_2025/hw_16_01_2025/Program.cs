@@ -20,7 +20,7 @@ namespace hw_16_01_2025
             try
             {
                 process = Process.Start(processStartInfo);
-                Console.WriteLine("The child process has been launched.");
+                Console.WriteLine("The child process has been launched");
                 Console.WriteLine("ID: " + process.Id);
                 Console.WriteLine("Start Time: " + process.StartTime);
 
