@@ -1,14 +1,14 @@
-﻿namespace hw_21_01_2025
+namespace hw_21_01_2025
 {
 
     /// <summary>
-    /// Основна програма, яка виконує генерацію простих чисел і чисел Фібоначчі в окремих потоках.
+    /// Основная программа, выполняющая генерацию простых чисел и чисел Фибоначчи в отдельных потоках.
     /// </summary>
     internal class Program
     {
 
         /// <summary>
-        /// Глобальна змінна, яка керує виконанням потоків.
+        /// Глобальная переменная, управляющая выполнением потоков.
         /// </summary>
         private static bool running = true;
 
@@ -17,21 +17,21 @@
             int lowerBound = 2;
             int? upperBound = null;
 
-            Console.Write("Введіть нижню межу або натисніть Enter (за замовчуванням 2): ");
+            Console.Write("Введите нижнюю границу или нажмите Enter (по умолчанию 2): ");
             if (int.TryParse(Console.ReadLine(), out int lowerInput))
             {
                 Validation(lowerInput);
                 lowerBound = lowerInput;
             }
 
-            Console.Write("Введіть верхню межу або натисніть Enter (для безкінечного генерування): ");
+            Console.Write("Введите верхнюю границу или нажмите Enter (для бесконечной генерации): ");
             if (int.TryParse(Console.ReadLine(), out int upperInput))
             {
                 Validation(upperInput);
                 upperBound = upperInput;
             }
 
-            Console.WriteLine("Натисніть будь-яку клавішу для завершення додатка.");
+            Console.WriteLine("Нажмите любую клавишу для завершения приложения.");
 
             Thread primeThread = new Thread(() => GeneratePrimes(lowerBound, upperBound));
             Thread fibonacciThread = new Thread(GenerateFibonacci);
@@ -46,7 +46,7 @@
         }
 
         /// <summary>
-        /// Генерує числа Фібоначчі в окремому потоці доти, доки змінна <see cref="running"/> равна true.
+        /// Генерирует числа Фибоначчи в отдельном потоке, пока переменная <see cref="running"/> равна true.
         /// </summary>
         private static void GenerateFibonacci()
         {
@@ -54,21 +54,21 @@
 
             while (running)
             {
-                Console.WriteLine($"Число Фібоначчі: {a}");
+                Console.WriteLine($"Число Фибоначчи: {a}");
                 int next = a + b;
                 a = b;
                 b = next;
                 Thread.Sleep(200);
             }
 
-            Console.WriteLine("Генерацію чисел Фібоначчі завершено.");
+            Console.WriteLine("Генерация чисел Фибоначчи завершена.");
         }
 
         /// <summary>
-        /// Генерує прості числа в заданому діапазоні в окремому потоці доти, доки змінна <see cref="running"/> равна true.
+        /// Генерирует простые числа в заданном диапазоне в отдельном потоке, пока переменная <see cref="running"/> равна true.
         /// </summary>
-        /// <param name="lowerBound">Нижня межа діапазону для генерації.</param>
-        /// <param name="upperBound">Верхня межа діапазону для генерації. Якщо null, генерація буде нескінченною.</param>
+        /// <param name="lowerBound">Нижняя граница диапазона генерации.</param>
+        /// <param name="upperBound">Верхняя граница диапазона генерации. Если null, генерация будет бесконечной.</param>
         private static void GeneratePrimes(int lowerBound, int? upperBound)
         {
             Random random = new Random();
@@ -86,7 +86,7 @@
                     }
                 }
 
-                Console.WriteLine("Генерацію завершено.");
+                Console.WriteLine("Генерация завершена.");
             }
             catch (Exception ex)
             {
@@ -96,10 +96,10 @@
         }
 
         /// <summary>
-        /// Перевіряє, чи є число простим.
+        /// Проверяет, является ли число простым.
         /// </summary>
-        /// <param name="number">Число для перевірки.</param>
-        /// <returns>Повертає true, якщо число просте; інакше false.</returns>
+        /// <param name="number">Число для проверки.</param>
+        /// <returns>Возвращает true, если число простое; иначе false.</returns>
         private static bool IsPrime(int number)
         {
             if (number < 2) return false;
@@ -111,14 +111,14 @@
         }
 
         /// <summary>
-        /// Перевіряє вхідне число на коректність.
+        /// Проверяет входное число на корректность.
         /// </summary>
-        /// <param name="number">Число для перевірки.</param>
-        /// <exception cref="ArgumentException">Викидається, якщо число від'ємне.</exception>
+        /// <param name="number">Число для проверки.</param>
+        /// <exception cref="ArgumentException">Выбрасывается, если число отрицательное.</exception>
         private static void Validation(int number)
         {
             if (number < 0)
-                throw new ArgumentException("Число не може бути від'ємним.");
+                throw new ArgumentException("Число не может быть отрицательным");
         }
     }
 }
