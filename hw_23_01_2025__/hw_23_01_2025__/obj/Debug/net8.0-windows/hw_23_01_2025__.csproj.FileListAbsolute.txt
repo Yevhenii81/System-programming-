@@ -1,0 +1,16 @@
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\bin\Debug\net8.0-windows\hw_23_01_2025__.exe
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\bin\Debug\net8.0-windows\hw_23_01_2025__.deps.json
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\bin\Debug\net8.0-windows\hw_23_01_2025__.runtimeconfig.json
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\bin\Debug\net8.0-windows\hw_23_01_2025__.dll
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\bin\Debug\net8.0-windows\hw_23_01_2025__.pdb
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.Form1.resources
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.AssemblyInfo.cs
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.dll
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\refint\hw_23_01_2025__.dll
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.pdb
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\hw_23_01_2025__.genruntimeconfig.cache
+C:\Users\USER\source\repos\hw_23_01_2025__\hw_23_01_2025__\obj\Debug\net8.0-windows\ref\hw_23_01_2025__.dll
