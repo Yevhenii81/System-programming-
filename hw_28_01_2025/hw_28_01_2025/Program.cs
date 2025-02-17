@@ -1,4 +1,4 @@
-﻿namespace hw_28_01_2025
+namespace hw_28_01_2025
 {
     class Program
     {
@@ -19,7 +19,7 @@
             thread2.Join();
             thread3.Join();
 
-            Console.WriteLine("Обробка завершена.");
+            Console.WriteLine("Обработка завершена.");
         }
 
         static void GenerateNumbers()
@@ -33,7 +33,7 @@
                     writer.WriteLine(random.Next(1, 1000));
                 }
             }
-            Console.WriteLine("Згенеровано числа у файлі itstep.txt");
+            Console.WriteLine("Сгенерированы числа в файле itstep.txt");
             mutex1.ReleaseMutex();
         }
 
@@ -49,7 +49,7 @@
                     .ToList();
 
                 File.WriteAllLines("itstep.txt", primes.Select(n => n.ToString()));
-                Console.WriteLine("Прості числа записані у itstep.txt");
+                Console.WriteLine("Простые числа записаны в itstep.txt");
             }
             mutex1.ReleaseMutex();
             mutex2.ReleaseMutex();
@@ -66,7 +66,7 @@
                     .ToList();
 
                 File.WriteAllLines("itstep_26.txt", primes7.Select(n => n.ToString()));
-                Console.WriteLine("Прості числа, що закінчуються на 7, записані у itstep_26.txt");
+                Console.WriteLine("Простые числа, оканчивающиеся на 7, записаны в itstep_26.txt");
             }
             mutex2.ReleaseMutex();
         }
